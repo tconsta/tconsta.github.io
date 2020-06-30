@@ -1,0 +1,102 @@
+body {
+  font-family: 'Krona One', sans-serif;
+  /*background: url(../img/bg/stripes-vert.jpg);*/
+  background-size: 100%;
+  text-align: center;
+  margin: 0 auto;
+}
+/*#########################################################*/
+.wrapper {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+.narrow-view {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  max-width: 828px;
+}
+.content-wrapper {
+  position: relative;
+  margin: 30px 10px 30px 10px;
+}
+.content {
+  position: relative;
+  z-index: 3;
+  margin: 10px;
+  text-align: left;
+}
+.home {
+  position: relative;
+  display: inline-block;
+  margin: 30px 10px 30px 10px;
+  font-size: 160%;
+}
+.home a:link { color: #f1faee; }
+.home a:visited { color: #f1faee; }
+.home a:hover { background-color: #021226; }
+
+/*#########################################################*/
+.img-box {
+  max-width: 100%;
+  text-align: center;
+}
+.fixed-bg {
+  position: fixed;
+  display: block;
+  width: 100%
+  z-index: 1;
+}
+.bg-box {
+  display: block;
+  width: 100vw;
+}
+.color-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  background-color: #FFFFFF;
+  opacity: 0.9;
+
+  border-radius: 8px 8px 8px 8px;
+  -moz-border-radius: 8px 8px 8px 8px;
+  -webkit-border-radius: 8px 8px 8px 8px;
+  border: 0px solid #000000;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+/*#########################################################*/
+/*          Narrow, mobile, low resolution                 */
+/*#########################################################*/
+
+/* iPhone 6,7,8,+,X */
+@media screen and (max-width: 415px) {
+  .hello {
+    font-size: 130%;
+  }
+  .about {
+    font-size: 100%;
+  }
+}
+/* iPhone 11 */
+@media (width: 828px) and (height: 1792px) {
+  .hello {
+    font-size: 400%;
+  }
+  .about {
+    font-size: 220%;
+  }
+}
+/* iPhone 11 Pro */
+@media (width: 1125px) and (height: 2436px) {
+  .hello {
+    font-size: 600%;
+  }
+  .about {
+    font-size: 300%;
+  }
+}

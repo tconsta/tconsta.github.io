@@ -1,0 +1,25 @@
+body {
+  font-family: 'Krona One', sans-serif;
+  background: url(../img/bg/stripes-vert.jpg);
+  background-size: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #f1faee;
+}
+a:link { color: #f1faee; }
+a:visited { color: #f1faee; }
+a:hover { background-color: #021226; }
+
+.wrapper {
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.temp {
+  margin: 30px;
+  font-size: 160%;
+}

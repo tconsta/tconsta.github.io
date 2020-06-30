@@ -1,0 +1,68 @@
+body {
+  font-family: 'Krona One', sans-serif;
+  background: url(../img/bg/stripes-vert.jpg);
+  background-size: 100%;
+  margin: 0 auto;
+  text-align: center;
+  color: #f1faee;
+}
+
+a:link { color: #f1faee; }
+a:visited { color: #f1faee; }
+a:hover { background-color: #021226; }
+
+.wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.hello {
+  font-size: 270%;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.about {
+  font-size: 140%;
+  text-align: left;
+}
+.nav {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*#########################################################*/
+/*          Narrow, mobile, low resolution                 */
+/*#########################################################*/
+
+/* iPhone 6,7,8,+,X */
+@media screen and (max-width: 415px) {
+  .hello {
+    font-size: 130%;
+  }
+  .about {
+    font-size: 100%;
+  }
+}
+/* iPhone 11 */
+@media (width: 828px) and (height: 1792px) {
+  .hello {
+    font-size: 400%;
+  }
+  .about {
+    font-size: 220%;
+  }
+}
+/* iPhone 11 Pro */
+@media (width: 1125px) and (height: 2436px) {
+  .hello {
+    font-size: 600%;
+  }
+  .about {
+    font-size: 300%;
+  }
+}
